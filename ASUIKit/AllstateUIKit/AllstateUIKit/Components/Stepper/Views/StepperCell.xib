@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lkz-Ka-pji" customClass="StepperCell" customModule="StepperComponent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="79" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="79" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DZ-bJ-uv4">
+                        <rect key="frame" x="0.0" y="0.0" width="79" height="36"/>
+                        <color key="backgroundColor" red="0.053342605879999998" green="0.18314142010000001" blue="0.4672842384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6DZ-bJ-uv4" secondAttribute="bottom" id="KEc-uf-8Md"/>
+                <constraint firstItem="6DZ-bJ-uv4" firstAttribute="leading" secondItem="lkz-Ka-pji" secondAttribute="leading" id="Kcw-17-WwE"/>
+                <constraint firstItem="6DZ-bJ-uv4" firstAttribute="top" secondItem="lkz-Ka-pji" secondAttribute="top" id="rTS-ZG-URE"/>
+                <constraint firstAttribute="trailing" secondItem="6DZ-bJ-uv4" secondAttribute="trailing" id="znu-rG-Gym"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="tnq-AH-WRy"/>
+            <size key="customSize" width="79" height="36"/>
+            <connections>
+                <outlet property="stepView" destination="6DZ-bJ-uv4" id="D6n-S8-Szk"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="88"/>
+        </collectionViewCell>
+    </objects>
+</document>

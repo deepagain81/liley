@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023ABF6D23B5E874004589B8 /* FloatingRowCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ABF6C23B5E874004589B8 /* FloatingRowCellTableViewController.swift */; };
+		024B9BC723ABB9CF003BED23 /* AllstateUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024B9BC623ABB9CF003BED23 /* AllstateUIKit.framework */; };
+		024B9BC823ABB9CF003BED23 /* AllstateUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 024B9BC623ABB9CF003BED23 /* AllstateUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02BA879423A8E733002CA37C /* FloatingRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA879223A8E733002CA37C /* FloatingRowTableViewCell.swift */; };
+		02BA879523A8E733002CA37C /* FloatingRowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA879323A8E733002CA37C /* FloatingRowTableViewController.swift */; };
+		02CA14A823ACC4B0003176FA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA14A723ACC4B0003176FA /* NavigationViewController.swift */; };
+		0823B213239A927B00DC07E6 /* StyleGuideLinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823B212239A927B00DC07E6 /* StyleGuideLinesViewController.swift */; };
+		1614261E23990A4D00E3ABCD /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614261A23990A4D00E3ABCD /* InitialViewController.swift */; };
+		1614261F23990A4D00E3ABCD /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614261B23990A4D00E3ABCD /* ColorViewController.swift */; };
+		1614262023990A4D00E3ABCD /* TypographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614261C23990A4D00E3ABCD /* TypographyViewController.swift */; };
+		1614262123990A4D00E3ABCD /* ASButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614261D23990A4D00E3ABCD /* ASButtonViewController.swift */; };
+		162E3E6323990C3C00A08518 /* StyleGuideLines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162E3E6123990C3C00A08518 /* StyleGuideLines.storyboard */; };
+		34B4A1B823ED92A8007859A6 /* LoadingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B4A1B723ED92A8007859A6 /* LoadingIndicatorViewController.swift */; };
+		34CB677B23D16B4E006E6DE2 /* FloatingRowCellShadowOnOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB677A23D16B4E006E6DE2 /* FloatingRowCellShadowOnOffViewController.swift */; };
+		3FAA94D523E44485004F8579 /* FeatureSummaryTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA94D423E44485004F8579 /* FeatureSummaryTypes.swift */; };
+		3FCEA5B323A1291400D4AE48 /* CustomFloatingRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEA5B223A1291400D4AE48 /* CustomFloatingRowViewController.swift */; };
+		4C2EFD6123ADE628006ED805 /* TileInCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2EFD6023ADE628006ED805 /* TileInCollectionViewController.swift */; };
+		54BEB83D23B3350100E8A98C /* NavigationBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BEB83B23B3350100E8A98C /* NavigationBar.storyboard */; };
+		54BEB83F23B3391E00E8A98C /* SearchBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BEB83E23B3391E00E8A98C /* SearchBarTableViewController.swift */; };
+		54BEB84A23B340D200E8A98C /* OverviewHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BEB84823B340D200E8A98C /* OverviewHeaderViewController.swift */; };
+		54BEB84B23B340D200E8A98C /* QuickAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BEB84923B340D200E8A98C /* QuickAccessViewController.swift */; };
+		5638876F239A1B690036C462 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5638876E239A1B690036C462 /* CardsViewController.swift */; };
+		616002FC23FBC0C4006639DD /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616002FB23FBC0C4006639DD /* BottomSheetViewController.swift */; };
+		698383F623A9E700000046BC /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698383F523A9E700000046BC /* TileCollectionViewCell.swift */; };
+		6E2AED5923E93FA000219422 /* AgentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2AED5823E93FA000219422 /* AgentCardViewController.swift */; };
+		6E2AED6223E9907A00219422 /* StatusHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2AED6123E9907A00219422 /* StatusHeaderViewController.swift */; };
+		70927ADD23978DC500F63FBD /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70927ADC23978DC500F63FBD /* TileViewController.swift */; };
+		81C69E52238F896C004F371D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C69E51238F896C004F371D /* AppDelegate.swift */; };
+		81C69E54238F896C004F371D /* UIKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C69E53238F896C004F371D /* UIKitDemoViewController.swift */; };
+		81C69E57238F896C004F371D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C69E55238F896C004F371D /* Main.storyboard */; };
+		81C69E59238F896D004F371D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C69E58238F896D004F371D /* Assets.xcassets */; };
+		81C69E5C238F896D004F371D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C69E5A238F896D004F371D /* LaunchScreen.storyboard */; };
+		81C69E67238F896E004F371D /* AllstateUIKit_DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C69E66238F896E004F371D /* AllstateUIKit_DemoAppTests.swift */; };
+		AECFB70F23964A0900574E1F /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECFB70E23964A0900574E1F /* SharedConstants.swift */; };
+		B73297B923ACC587001F35E4 /* FloatingRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73297B823ACC587001F35E4 /* FloatingRowViewController.swift */; };
+		B82EC0E923B35FBD001D9DA4 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82EC0E823B35FBD001D9DA4 /* SegmentViewController.swift */; };
+		B82EC0EB23B3670D001D9DA4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82EC0EA23B3670D001D9DA4 /* TabBar.swift */; };
+		B858C8CD23B359B1009776A4 /* FeatureSummaryNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858C8CC23B359B1009776A4 /* FeatureSummaryNavigationBar.swift */; };
+		B88DABDC23C5D6E800BDB0E9 /* AgentTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DABDA23C5D6E800BDB0E9 /* AgentTileViewController.swift */; };
+		B88DABDD23C5D6E800BDB0E9 /* MyAgentScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DABDB23C5D6E800BDB0E9 /* MyAgentScreenViewController.swift */; };
+		D2DCBBB323B6768A00E1DAA2 /* CardsPriorityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DCBBB223B6768A00E1DAA2 /* CardsPriorityController.swift */; };
+		E24A827323FBC4A5001A1147 /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A827223FBC4A5001A1147 /* StepperViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81C69E63238F896E004F371D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81C69E46238F896C004F371D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C69E4D238F896C004F371D;
+			remoteInfo = "AllstateUIKit-DemoApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		024B9BC923ABB9D0003BED23 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				024B9BC823ABB9CF003BED23 /* AllstateUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		023ABF6C23B5E874004589B8 /* FloatingRowCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingRowCellTableViewController.swift; sourceTree = "<group>"; };
+		024B9BC623ABB9CF003BED23 /* AllstateUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AllstateUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02BA879223A8E733002CA37C /* FloatingRowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingRowTableViewCell.swift; sourceTree = "<group>"; };
+		02BA879323A8E733002CA37C /* FloatingRowTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingRowTableViewController.swift; sourceTree = "<group>"; };
+		02CA14A723ACC4B0003176FA /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		0823B212239A927B00DC07E6 /* StyleGuideLinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuideLinesViewController.swift; sourceTree = "<group>"; };
+		1614261A23990A4D00E3ABCD /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		1614261B23990A4D00E3ABCD /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		1614261C23990A4D00E3ABCD /* TypographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypographyViewController.swift; sourceTree = "<group>"; };
+		1614261D23990A4D00E3ABCD /* ASButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASButtonViewController.swift; sourceTree = "<group>"; };
+		162E3E6223990C3C00A08518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StyleGuideLines.storyboard; sourceTree = "<group>"; };
+		34B4A1B723ED92A8007859A6 /* LoadingIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewController.swift; sourceTree = "<group>"; };
+		34CB677A23D16B4E006E6DE2 /* FloatingRowCellShadowOnOffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingRowCellShadowOnOffViewController.swift; sourceTree = "<group>"; };
+		3FAA94D423E44485004F8579 /* FeatureSummaryTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSummaryTypes.swift; sourceTree = "<group>"; };
+		3FCEA5B223A1291400D4AE48 /* CustomFloatingRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingRowViewController.swift; sourceTree = "<group>"; };
+		4C2EFD6023ADE628006ED805 /* TileInCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileInCollectionViewController.swift; sourceTree = "<group>"; };
+		54BEB83C23B3350100E8A98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavigationBar.storyboard; sourceTree = "<group>"; };
+		54BEB83E23B3391E00E8A98C /* SearchBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewController.swift; sourceTree = "<group>"; };
+		54BEB84823B340D200E8A98C /* OverviewHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewHeaderViewController.swift; sourceTree = "<group>"; };
+		54BEB84923B340D200E8A98C /* QuickAccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickAccessViewController.swift; sourceTree = "<group>"; };
+		5638876E239A1B690036C462 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		616002FB23FBC0C4006639DD /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		659EA35523A005660015704A /* AllstateUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AllstateUIKit.framework; sourceTree = "<group>"; };
+		698383F523A9E700000046BC /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
+		6E2AED5823E93FA000219422 /* AgentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCardViewController.swift; sourceTree = "<group>"; };
+		6E2AED6123E9907A00219422 /* StatusHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusHeaderViewController.swift; sourceTree = "<group>"; };
+		70927ADC23978DC500F63FBD /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		81C69E4E238F896C004F371D /* AllstateUIKit-DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AllstateUIKit-DemoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C69E51238F896C004F371D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81C69E53238F896C004F371D /* UIKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitDemoViewController.swift; sourceTree = "<group>"; };
+		81C69E56238F896C004F371D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81C69E58238F896D004F371D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C69E5B238F896D004F371D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81C69E5D238F896D004F371D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C69E62238F896E004F371D /* AllstateUIKit-DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AllstateUIKit-DemoAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C69E66238F896E004F371D /* AllstateUIKit_DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllstateUIKit_DemoAppTests.swift; sourceTree = "<group>"; };
+		81C69E68238F896E004F371D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECFB70E23964A0900574E1F /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		B73297B823ACC587001F35E4 /* FloatingRowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingRowViewController.swift; sourceTree = "<group>"; };
+		B82EC0E823B35FBD001D9DA4 /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		B82EC0EA23B3670D001D9DA4 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		B858C8CC23B359B1009776A4 /* FeatureSummaryNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureSummaryNavigationBar.swift; sourceTree = "<group>"; };
+		B88DABDA23C5D6E800BDB0E9 /* AgentTileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentTileViewController.swift; sourceTree = "<group>"; };
+		B88DABDB23C5D6E800BDB0E9 /* MyAgentScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAgentScreenViewController.swift; sourceTree = "<group>"; };
+		D2DCBBB223B6768A00E1DAA2 /* CardsPriorityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsPriorityController.swift; sourceTree = "<group>"; };
+		E24A827223FBC4A5001A1147 /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81C69E4B238F896C004F371D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024B9BC723ABB9CF003BED23 /* AllstateUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C69E5F238F896E004F371D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02BA879723A8E793002CA37C /* FloatingRowDefault */ = {
+			isa = PBXGroup;
+			children = (
+				02BA879223A8E733002CA37C /* FloatingRowTableViewCell.swift */,
+				B73297B823ACC587001F35E4 /* FloatingRowViewController.swift */,
+				02BA879323A8E733002CA37C /* FloatingRowTableViewController.swift */,
+				023ABF6C23B5E874004589B8 /* FloatingRowCellTableViewController.swift */,
+				34CB677A23D16B4E006E6DE2 /* FloatingRowCellShadowOnOffViewController.swift */,
+			);
+			path = FloatingRowDefault;
+			sourceTree = "<group>";
+		};
+		81C69E45238F896C004F371D = {
+			isa = PBXGroup;
+			children = (
+				81C69E50238F896C004F371D /* AllstateUIKit-DemoApp */,
+				81C69E65238F896E004F371D /* AllstateUIKit-DemoAppTests */,
+				81C69E76238F99CE004F371D /* Frameworks */,
+				81C69E4F238F896C004F371D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81C69E4F238F896C004F371D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C69E4E238F896C004F371D /* AllstateUIKit-DemoApp.app */,
+				81C69E62238F896E004F371D /* AllstateUIKit-DemoAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C69E50238F896C004F371D /* AllstateUIKit-DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				34B4A1B723ED92A8007859A6 /* LoadingIndicatorViewController.swift */,
+				E24A827223FBC4A5001A1147 /* StepperViewController.swift */,
+				B88DABDA23C5D6E800BDB0E9 /* AgentTileViewController.swift */,
+				B88DABDB23C5D6E800BDB0E9 /* MyAgentScreenViewController.swift */,
+				54BEB84823B340D200E8A98C /* OverviewHeaderViewController.swift */,
+				54BEB84923B340D200E8A98C /* QuickAccessViewController.swift */,
+				54BEB83E23B3391E00E8A98C /* SearchBarTableViewController.swift */,
+				B82EC0E823B35FBD001D9DA4 /* SegmentViewController.swift */,
+				B82EC0EA23B3670D001D9DA4 /* TabBar.swift */,
+				3FAA94D423E44485004F8579 /* FeatureSummaryTypes.swift */,
+				B858C8CC23B359B1009776A4 /* FeatureSummaryNavigationBar.swift */,
+				54BEB83B23B3350100E8A98C /* NavigationBar.storyboard */,
+				81C69E51238F896C004F371D /* AppDelegate.swift */,
+				1614261D23990A4D00E3ABCD /* ASButtonViewController.swift */,
+				5638876E239A1B690036C462 /* CardsViewController.swift */,
+				D2DCBBB223B6768A00E1DAA2 /* CardsPriorityController.swift */,
+				1614261B23990A4D00E3ABCD /* ColorViewController.swift */,
+				3FCEA5B223A1291400D4AE48 /* CustomFloatingRowViewController.swift */,
+				4C2EFD6023ADE628006ED805 /* TileInCollectionViewController.swift */,
+				698383F523A9E700000046BC /* TileCollectionViewCell.swift */,
+				1614261A23990A4D00E3ABCD /* InitialViewController.swift */,
+				81C69E5A238F896D004F371D /* LaunchScreen.storyboard */,
+				81C69E55238F896C004F371D /* Main.storyboard */,
+				162E3E6123990C3C00A08518 /* StyleGuideLines.storyboard */,
+				AECFB70E23964A0900574E1F /* SharedConstants.swift */,
+				6E2AED6123E9907A00219422 /* StatusHeaderViewController.swift */,
+				0823B212239A927B00DC07E6 /* StyleGuideLinesViewController.swift */,
+				70927ADC23978DC500F63FBD /* TileViewController.swift */,
+				1614261C23990A4D00E3ABCD /* TypographyViewController.swift */,
+				81C69E53238F896C004F371D /* UIKitDemoViewController.swift */,
+				02CA14A723ACC4B0003176FA /* NavigationViewController.swift */,
+				616002FB23FBC0C4006639DD /* BottomSheetViewController.swift */,
+				81C69E71238F8985004F371D /* Resources */,
+				6E2AED5823E93FA000219422 /* AgentCardViewController.swift */,
+				02BA879723A8E793002CA37C /* FloatingRowDefault */,
+				81C69E71238F8985004F371D /* Resources */,
+			);
+			path = "AllstateUIKit-DemoApp";
+			sourceTree = "<group>";
+		};
+		81C69E65238F896E004F371D /* AllstateUIKit-DemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				81C69E66238F896E004F371D /* AllstateUIKit_DemoAppTests.swift */,
+				81C69E68238F896E004F371D /* Info.plist */,
+			);
+			path = "AllstateUIKit-DemoAppTests";
+			sourceTree = "<group>";
+		};
+		81C69E71238F8985004F371D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81C69E58238F896D004F371D /* Assets.xcassets */,
+				81C69E5D238F896D004F371D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81C69E76238F99CE004F371D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				024B9BC623ABB9CF003BED23 /* AllstateUIKit.framework */,
+				659EA35523A005660015704A /* AllstateUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81C69E4D238F896C004F371D /* AllstateUIKit-DemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C69E6B238F896E004F371D /* Build configuration list for PBXNativeTarget "AllstateUIKit-DemoApp" */;
+			buildPhases = (
+				81C69E4A238F896C004F371D /* Sources */,
+				81C69E4B238F896C004F371D /* Frameworks */,
+				81C69E4C238F896C004F371D /* Resources */,
+				81C6C3A72391215A00955983 /* ShellScript */,
+				024B9BC923ABB9D0003BED23 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AllstateUIKit-DemoApp";
+			productName = "AllstateUIKit-DemoApp";
+			productReference = 81C69E4E238F896C004F371D /* AllstateUIKit-DemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81C69E61238F896E004F371D /* AllstateUIKit-DemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C69E6E238F896E004F371D /* Build configuration list for PBXNativeTarget "AllstateUIKit-DemoAppTests" */;
+			buildPhases = (
+				81C69E5E238F896E004F371D /* Sources */,
+				81C69E5F238F896E004F371D /* Frameworks */,
+				81C69E60238F896E004F371D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81C69E64238F896E004F371D /* PBXTargetDependency */,
+			);
+			name = "AllstateUIKit-DemoAppTests";
+			productName = "AllstateUIKit-DemoAppTests";
+			productReference = 81C69E62238F896E004F371D /* AllstateUIKit-DemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81C69E46238F896C004F371D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Allstate;
+				TargetAttributes = {
+					81C69E4D238F896C004F371D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					81C69E61238F896E004F371D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 81C69E4D238F896C004F371D;
+					};
+				};
+			};
+			buildConfigurationList = 81C69E49238F896C004F371D /* Build configuration list for PBXProject "AllstateUIKit-DemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81C69E45238F896C004F371D;
+			productRefGroup = 81C69E4F238F896C004F371D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81C69E4D238F896C004F371D /* AllstateUIKit-DemoApp */,
+				81C69E61238F896E004F371D /* AllstateUIKit-DemoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81C69E4C238F896C004F371D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C69E5C238F896D004F371D /* LaunchScreen.storyboard in Resources */,
+				81C69E59238F896D004F371D /* Assets.xcassets in Resources */,
+				81C69E57238F896C004F371D /* Main.storyboard in Resources */,
+				54BEB83D23B3350100E8A98C /* NavigationBar.storyboard in Resources */,
+				162E3E6323990C3C00A08518 /* StyleGuideLines.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C69E60238F896E004F371D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81C6C3A72391215A00955983 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81C69E4A238F896C004F371D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DABDC23C5D6E800BDB0E9 /* AgentTileViewController.swift in Sources */,
+				54BEB84B23B340D200E8A98C /* QuickAccessViewController.swift in Sources */,
+				AECFB70F23964A0900574E1F /* SharedConstants.swift in Sources */,
+				B858C8CD23B359B1009776A4 /* FeatureSummaryNavigationBar.swift in Sources */,
+				02CA14A823ACC4B0003176FA /* NavigationViewController.swift in Sources */,
+				81C69E54238F896C004F371D /* UIKitDemoViewController.swift in Sources */,
+				B82EC0EB23B3670D001D9DA4 /* TabBar.swift in Sources */,
+				3FCEA5B323A1291400D4AE48 /* CustomFloatingRowViewController.swift in Sources */,
+				02BA879423A8E733002CA37C /* FloatingRowTableViewCell.swift in Sources */,
+				B73297B923ACC587001F35E4 /* FloatingRowViewController.swift in Sources */,
+				023ABF6D23B5E874004589B8 /* FloatingRowCellTableViewController.swift in Sources */,
+				6E2AED5923E93FA000219422 /* AgentCardViewController.swift in Sources */,
+				5638876F239A1B690036C462 /* CardsViewController.swift in Sources */,
+				616002FC23FBC0C4006639DD /* BottomSheetViewController.swift in Sources */,
+				6E2AED6223E9907A00219422 /* StatusHeaderViewController.swift in Sources */,
+				0823B213239A927B00DC07E6 /* StyleGuideLinesViewController.swift in Sources */,
+				B82EC0E923B35FBD001D9DA4 /* SegmentViewController.swift in Sources */,
+				698383F623A9E700000046BC /* TileCollectionViewCell.swift in Sources */,
+				81C69E52238F896C004F371D /* AppDelegate.swift in Sources */,
+				1614261E23990A4D00E3ABCD /* InitialViewController.swift in Sources */,
+				02BA879523A8E733002CA37C /* FloatingRowTableViewController.swift in Sources */,
+				54BEB83F23B3391E00E8A98C /* SearchBarTableViewController.swift in Sources */,
+				D2DCBBB323B6768A00E1DAA2 /* CardsPriorityController.swift in Sources */,
+				1614262123990A4D00E3ABCD /* ASButtonViewController.swift in Sources */,
+				54BEB84A23B340D200E8A98C /* OverviewHeaderViewController.swift in Sources */,
+				E24A827323FBC4A5001A1147 /* StepperViewController.swift in Sources */,
+				3FAA94D523E44485004F8579 /* FeatureSummaryTypes.swift in Sources */,
+				1614261F23990A4D00E3ABCD /* ColorViewController.swift in Sources */,
+				4C2EFD6123ADE628006ED805 /* TileInCollectionViewController.swift in Sources */,
+				34B4A1B823ED92A8007859A6 /* LoadingIndicatorViewController.swift in Sources */,
+				B88DABDD23C5D6E800BDB0E9 /* MyAgentScreenViewController.swift in Sources */,
+				34CB677B23D16B4E006E6DE2 /* FloatingRowCellShadowOnOffViewController.swift in Sources */,
+				70927ADD23978DC500F63FBD /* TileViewController.swift in Sources */,
+				1614262023990A4D00E3ABCD /* TypographyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C69E5E238F896E004F371D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C69E67238F896E004F371D /* AllstateUIKit_DemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81C69E64238F896E004F371D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81C69E4D238F896C004F371D /* AllstateUIKit-DemoApp */;
+			targetProxy = 81C69E63238F896E004F371D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		162E3E6123990C3C00A08518 /* StyleGuideLines.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				162E3E6223990C3C00A08518 /* Base */,
+			);
+			name = StyleGuideLines.storyboard;
+			sourceTree = "<group>";
+		};
+		54BEB83B23B3350100E8A98C /* NavigationBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54BEB83C23B3350100E8A98C /* Base */,
+			);
+			name = NavigationBar.storyboard;
+			sourceTree = "<group>";
+		};
+		81C69E55238F896C004F371D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C69E56238F896C004F371D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81C69E5A238F896D004F371D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C69E5B238F896D004F371D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81C69E69238F896E004F371D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81C69E6A238F896E004F371D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81C69E6C238F896E004F371D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2AMXR9TLT9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "AllstateUIKit-DemoApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Allstate.AllstateMobile.ENT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AllstateMobile_ENT_App_Exp_Jan2021;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		81C69E6D238F896E004F371D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2AMXR9TLT9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "AllstateUIKit-DemoApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Allstate.AllstateMobile.ENT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AllstateMobile_ENT_App_Exp_Jan2021;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		81C69E6F238F896E004F371D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "AllstateUIKit-DemoAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.allstate.AllstateUIKit-DemoAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllstateUIKit-DemoApp.app/AllstateUIKit-DemoApp";
+			};
+			name = Debug;
+		};
+		81C69E70238F896E004F371D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "AllstateUIKit-DemoAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.allstate.AllstateUIKit-DemoAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllstateUIKit-DemoApp.app/AllstateUIKit-DemoApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81C69E49238F896C004F371D /* Build configuration list for PBXProject "AllstateUIKit-DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C69E69238F896E004F371D /* Debug */,
+				81C69E6A238F896E004F371D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C69E6B238F896E004F371D /* Build configuration list for PBXNativeTarget "AllstateUIKit-DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C69E6C238F896E004F371D /* Debug */,
+				81C69E6D238F896E004F371D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C69E6E238F896E004F371D /* Build configuration list for PBXNativeTarget "AllstateUIKit-DemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C69E6F238F896E004F371D /* Debug */,
+				81C69E70238F896E004F371D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81C69E46238F896C004F371D /* Project object */;
+}

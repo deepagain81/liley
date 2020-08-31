@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SheetViewController" customModule="AllstateUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="HZF-mG-Qk5" id="qYZ-8E-FBq"/>
+                <outlet property="handleArea" destination="agp-vq-UOe" id="zK6-cE-ych"/>
+                <outlet property="handleIdentifierView" destination="VAC-uS-kAO" id="m8L-wU-aUf"/>
+                <outlet property="view" destination="J09-Kc-Q0Y" id="EsN-ma-1Gw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="J09-Kc-Q0Y">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view verifyAmbiguity="off" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-mG-Qk5">
+                    <rect key="frame" x="0.0" y="36" width="414" height="811"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="811" id="sea-55-uyN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agp-vq-UOe">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="36"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAC-uS-kAO">
+                            <rect key="frame" x="191" y="8" width="32" height="4"/>
+                            <color key="backgroundColor" red="0.58039215690000001" green="0.63137254899999995" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="APC-L8-KNj"/>
+                                <constraint firstAttribute="height" constant="4" id="WWj-Q3-iuh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="7zL-v8-b4Y"/>
+                        <constraint firstItem="VAC-uS-kAO" firstAttribute="top" secondItem="agp-vq-UOe" secondAttribute="top" constant="8" id="Lv3-tN-sih"/>
+                        <constraint firstItem="VAC-uS-kAO" firstAttribute="centerX" secondItem="agp-vq-UOe" secondAttribute="centerX" id="gXV-Mq-jCq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HZF-mG-Qk5" firstAttribute="leading" secondItem="LcF-Fg-NqM" secondAttribute="leading" id="DQG-qT-Igo"/>
+                <constraint firstItem="agp-vq-UOe" firstAttribute="top" secondItem="J09-Kc-Q0Y" secondAttribute="top" id="SM6-2n-3SR"/>
+                <constraint firstItem="agp-vq-UOe" firstAttribute="trailing" secondItem="LcF-Fg-NqM" secondAttribute="trailing" id="VMb-Kd-BdX"/>
+                <constraint firstItem="LcF-Fg-NqM" firstAttribute="trailing" secondItem="HZF-mG-Qk5" secondAttribute="trailing" id="jDz-Sn-gBZ"/>
+                <constraint firstItem="HZF-mG-Qk5" firstAttribute="top" secondItem="agp-vq-UOe" secondAttribute="bottom" id="uNW-O2-M7c"/>
+                <constraint firstItem="agp-vq-UOe" firstAttribute="leading" secondItem="LcF-Fg-NqM" secondAttribute="leading" id="yyl-Qi-zym"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LcF-Fg-NqM"/>
+            <point key="canvasLocation" x="62.399999999999999" y="290.39408866995075"/>
+        </view>
+    </objects>
+</document>

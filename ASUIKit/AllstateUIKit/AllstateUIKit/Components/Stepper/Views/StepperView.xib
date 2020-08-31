@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepperView" customModule="AllstateUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionview" destination="9y4-xe-P29" id="gyb-R1-jGo"/>
+                <outlet property="titleLabel" destination="h8a-2u-eUq" id="rIJ-kU-1Eu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="O0m-ir-zxT">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-Ln-oTL">
+                    <rect key="frame" x="0.0" y="0.0" width="409" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8a-2u-eUq">
+                            <rect key="frame" x="16" y="16" width="377" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9y4-xe-P29">
+                            <rect key="frame" x="16" y="52.5" width="377" height="7.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="78c-7N-W8e">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9y4-xe-P29" secondAttribute="trailing" constant="16" id="2JO-PI-JPI"/>
+                        <constraint firstItem="h8a-2u-eUq" firstAttribute="leading" secondItem="NPN-Ln-oTL" secondAttribute="leading" constant="16" id="4Ws-jC-jI8"/>
+                        <constraint firstAttribute="trailing" secondItem="h8a-2u-eUq" secondAttribute="trailing" constant="16" id="4ZF-ZM-Py0"/>
+                        <constraint firstItem="9y4-xe-P29" firstAttribute="top" secondItem="h8a-2u-eUq" secondAttribute="bottom" constant="16" id="7wM-rU-YMp"/>
+                        <constraint firstItem="h8a-2u-eUq" firstAttribute="top" secondItem="NPN-Ln-oTL" secondAttribute="top" constant="16" id="VeR-2H-yay"/>
+                        <constraint firstAttribute="bottom" secondItem="9y4-xe-P29" secondAttribute="bottom" constant="4" id="lgc-j5-myU"/>
+                        <constraint firstItem="9y4-xe-P29" firstAttribute="leading" secondItem="NPN-Ln-oTL" secondAttribute="leading" constant="16" id="vAR-ec-lje"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NPN-Ln-oTL" secondAttribute="bottom" id="1sZ-TN-Upi"/>
+                <constraint firstAttribute="trailing" secondItem="NPN-Ln-oTL" secondAttribute="trailing" id="ImI-Rs-BPs"/>
+                <constraint firstItem="NPN-Ln-oTL" firstAttribute="leading" secondItem="O0m-ir-zxT" secondAttribute="leading" id="Rpx-w4-xhV"/>
+                <constraint firstItem="NPN-Ln-oTL" firstAttribute="top" secondItem="O0m-ir-zxT" secondAttribute="top" id="d77-cx-0EH"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="abT-z5-Mni"/>
+            <point key="canvasLocation" x="52.898550724637687" y="-224.33035714285714"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,266 @@
+Starting ATS Diagnostics
+
+Configuring ATS Info.plist keys and displaying the result of HTTPS loads to https://mobilews-int.platform-test.allstate.com/.
+A test will "PASS" if URLSession:task:didCompleteWithError: returns a nil error.
+================================================================================
+
+Default ATS Secure Connection
+---
+ATS Default Connection
+ATS Dictionary:
+{
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <D5FC56D9-2997-448C-BB25-37D9832597CC>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <D5FC56D9-2997-448C-BB25-37D9832597CC>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9275f00ab0 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9824, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9824}}, _kCFStreamErrorCodeKey=-9824}
+---
+
+================================================================================
+
+Allowing Arbitrary Loads
+
+---
+Allow All Loads
+ATS Dictionary:
+{
+    NSAllowsArbitraryLoads = true;
+}
+Result : PASS
+---
+
+================================================================================
+
+Configuring TLS exceptions for mobilews-int.platform-test.allstate.com
+
+---
+TLSv1.3
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.3";
+        };
+    };
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <D0D46173-D8A7-406D-AAFF-3433084376BD>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <D0D46173-D8A7-406D-AAFF-3433084376BD>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9275e06e00 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9858, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9858}}, _kCFStreamErrorCodeKey=-9858}
+---
+
+---
+TLSv1.2
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.2";
+        };
+    };
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <811A0A50-8F3A-47B6-B45E-7F8272DED9AF>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <811A0A50-8F3A-47B6-B45E-7F8272DED9AF>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9275f08710 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9824, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9824}}, _kCFStreamErrorCodeKey=-9824}
+---
+
+---
+TLSv1.1
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.1";
+        };
+    };
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <456EA7B8-94F9-46B0-B173-6749CD9602F0>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <456EA7B8-94F9-46B0-B173-6749CD9602F0>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9276a05f40 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9824, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9824}}, _kCFStreamErrorCodeKey=-9824}
+---
+
+---
+TLSv1.0
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.0";
+        };
+    };
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <2B497E7D-BB47-4B0E-B1A9-BBEAE776FF01>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <2B497E7D-BB47-4B0E-B1A9-BBEAE776FF01>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9275c72d10 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9824, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9824}}, _kCFStreamErrorCodeKey=-9824}
+---
+
+================================================================================
+
+Configuring PFS exceptions for mobilews-int.platform-test.allstate.com
+
+---
+Disabling Perfect Forward Secrecy
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+================================================================================
+
+Configuring PFS exceptions and allowing insecure HTTP for mobilews-int.platform-test.allstate.com
+
+---
+Disabling Perfect Forward Secrecy and Allowing Insecure HTTP
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionAllowsInsecureHTTPLoads = true;
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+================================================================================
+
+Configuring TLS exceptions with PFS disabled for mobilews-int.platform-test.allstate.com
+
+---
+TLSv1.3 with PFS disabled
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.3";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <41619CA4-DBFC-4CA5-BF80-BCFF18DD397B>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <41619CA4-DBFC-4CA5-BF80-BCFF18DD397B>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9275e0d790 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9858, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9858}}, _kCFStreamErrorCodeKey=-9858}
+---
+
+---
+TLSv1.2 with PFS disabled
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.2";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+---
+TLSv1.1 with PFS disabled
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.1";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+---
+TLSv1.0 with PFS disabled
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionMinimumTLSVersion = "TLSv1.0";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+================================================================================
+
+Configuring TLS exceptions with PFS disabled and insecure HTTP allowed for mobilews-int.platform-test.allstate.com
+
+---
+TLSv1.3 with PFS disabled and insecure HTTP allowed
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionAllowsInsecureHTTPLoads = true;
+            NSExceptionMinimumTLSVersion = "TLSv1.3";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : FAIL
+Error : Error Domain=NSURLErrorDomain Code=-1200 "An SSL error has occurred and a secure connection to the server cannot be made." UserInfo={NSErrorFailingURLStringKey=https://mobilews-int.platform-test.allstate.com/, NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <9813CA69-8B46-4384-95EB-D13C90AEF057>.<1>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <9813CA69-8B46-4384-95EB-D13C90AEF057>.<1>"
+), NSLocalizedDescription=An SSL error has occurred and a secure connection to the server cannot be made., NSErrorFailingURLKey=https://mobilews-int.platform-test.allstate.com/, NSUnderlyingError=0x7f9276900660 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9858, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9858}}, _kCFStreamErrorCodeKey=-9858}
+---
+
+---
+TLSv1.2 with PFS disabled and insecure HTTP allowed
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionAllowsInsecureHTTPLoads = true;
+            NSExceptionMinimumTLSVersion = "TLSv1.2";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+---
+TLSv1.1 with PFS disabled and insecure HTTP allowed
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionAllowsInsecureHTTPLoads = true;
+            NSExceptionMinimumTLSVersion = "TLSv1.1";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+---
+TLSv1.0 with PFS disabled and insecure HTTP allowed
+ATS Dictionary:
+{
+    NSExceptionDomains =     {
+        "mobilews-int.platform-test.allstate.com" =         {
+            NSExceptionAllowsInsecureHTTPLoads = true;
+            NSExceptionMinimumTLSVersion = "TLSv1.0";
+            NSExceptionRequiresForwardSecrecy = false;
+        };
+    };
+}
+Result : PASS
+---
+
+================================================================================
+

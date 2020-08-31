@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="NXQ-8P-bL4" customClass="AgentTileCollectionViewCell" customModule="AllstateUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LlQ-rU-svA">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGt-RO-0eb">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="88"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFt-i9-Zal" customClass="TileAsButton" customModule="AllstateUIKit" customModuleProvider="target">
+                                <rect key="frame" x="4" y="8" width="160" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="XBr-PK-wwX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="groundFloor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bFt-i9-Zal" secondAttribute="bottom" constant="10" id="E23-V2-wDd"/>
+                            <constraint firstAttribute="trailing" secondItem="bFt-i9-Zal" secondAttribute="trailing" constant="8" id="KXy-mw-oPh"/>
+                            <constraint firstItem="bFt-i9-Zal" firstAttribute="top" secondItem="LGt-RO-0eb" secondAttribute="top" constant="8" id="QY7-og-djl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LGt-RO-0eb" firstAttribute="leading" secondItem="LlQ-rU-svA" secondAttribute="leading" id="NfP-eJ-bQr"/>
+                    <constraint firstAttribute="bottom" secondItem="LGt-RO-0eb" secondAttribute="bottom" id="RGk-ET-vYG"/>
+                    <constraint firstAttribute="trailing" secondItem="LGt-RO-0eb" secondAttribute="trailing" id="Z3M-wa-AUB"/>
+                    <constraint firstItem="LGt-RO-0eb" firstAttribute="top" secondItem="LlQ-rU-svA" secondAttribute="top" id="jia-E2-Q13"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="agentTileButton" destination="bFt-i9-Zal" id="DQ8-W9-QA0"/>
+            </connections>
+            <point key="canvasLocation" x="-357.97101449275362" y="-7.3660714285714279"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="groundFloor">
+            <color red="0.9179999828338623" green="0.92900002002716064" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

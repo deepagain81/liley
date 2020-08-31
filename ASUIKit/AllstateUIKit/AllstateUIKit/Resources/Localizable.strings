@@ -1,0 +1,7 @@
+/* 
+  Localizable.strings
+  AllstateUIKit
+*/
+
+// MARK: - LoadingIndicatorView
+"LOADING_INDICATOR_DEFAULT_MESSAGE" = "Hold tight…";
