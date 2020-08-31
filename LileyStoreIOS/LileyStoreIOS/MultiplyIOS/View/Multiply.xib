@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultiplyVC" customModule="LileyStoreIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="DisplayLbl" destination="9kt-AT-NMp" id="fic-q9-QU0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8j2-aZ-nhy" userLabel="Slider 2">
+                    <rect key="frame" x="58" y="224" width="298" height="31"/>
+                    <connections>
+                        <action selector="slider1:" destination="-1" eventType="valueChanged" id="wSb-MN-7wk"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mxL-1g-ZCr" userLabel="Slider 1">
+                    <rect key="frame" x="67" y="144" width="280" height="31"/>
+                    <connections>
+                        <action selector="slider2:" destination="-1" eventType="valueChanged" id="rGV-xI-buy"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kt-AT-NMp">
+                    <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyu-hU-Bfq" userLabel="Submit Button">
+                    <rect key="frame" x="184" y="487.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="submitBtn:" destination="-1" eventType="touchUpInside" id="Ybl-b8-iMT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hyu-hU-Bfq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="280-Z0-QVX"/>
+                <constraint firstItem="mxL-1g-ZCr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="8cq-pl-7BI"/>
+                <constraint firstItem="mxL-1g-ZCr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GxR-71-vzP"/>
+                <constraint firstItem="mxL-1g-ZCr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="69" id="KFT-XZ-Nh5"/>
+                <constraint firstItem="8j2-aZ-nhy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="YSY-nZ-WkN"/>
+                <constraint firstItem="8j2-aZ-nhy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eBE-iy-4uX"/>
+                <constraint firstItem="9kt-AT-NMp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fu0-Gy-Bvq"/>
+                <constraint firstItem="9kt-AT-NMp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="k8f-Gy-OxC"/>
+                <constraint firstItem="8j2-aZ-nhy" firstAttribute="top" secondItem="mxL-1g-ZCr" secondAttribute="bottom" constant="50" id="oOs-qf-4ER"/>
+                <constraint firstItem="mxL-1g-ZCr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yX4-sR-w2m"/>
+                <constraint firstItem="Hyu-hU-Bfq" firstAttribute="top" secondItem="9kt-AT-NMp" secondAttribute="top" constant="50" id="zVh-Li-K3T"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="146"/>
+        </view>
+    </objects>
+</document>
